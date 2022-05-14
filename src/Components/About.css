@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+
+
+
+body{
+   overflow-y: hidden;
+   overflow-x: hidden;
+  }  
+
+  .main-div-home{
+      border-top: 1px white solid;
+      background: rgb(0,0,0);
+      background: linear-gradient(90deg, rgba(0,0,0,1) 15%, rgba(13,51,34,0.9196720924698004) 63%);
+      height: 89.2vh;
+  }
+  
+    
+  .first-line{
+    color: white;
+    position: absolute;
+    top: 170px;
+    left: 200px;
+    font-size: 0.85rem;
+    font-family: 'IBM Plex Serif', serif;
+  }
+  .second-line{
+    color: white;
+    position: absolute;
+    top: 190px;
+    left: 193px;
+    font-size: 3.5rem;
+    font-family: 'IBM Plex Serif', serif;
+    background: -webkit-linear-gradient(rgb(252, 77, 42), rgb(240, 225, 225));
+    text-shadow: -1px 2px rgba(128, 128, 128, 0.5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .third-line{
+    color: rgb(211, 149, 149);
+    position: absolute;
+    top: 271px;
+    left: 159px;
+    font-family: 'Pacifico', cursive;
+  
+  }
+  .fourth-line{
+    color: rgb(147, 218, 182);
+    position: absolute;
+    top: 319px;
+    left: 159px;
+    font-family: 'My Soul', cursive;
+  }
+
+  .rightpart{
+    /* border: 1px solid red; */
+    width: 40vw;
+    height: 80vh;
+    position: absolute;
+    left: 50%;
+    
+  }
+
+  .right-first{
+    position: absolute;
+    top: 57px;
+    color: white;
+    right: 160px;
+    font-family: 'Tapestry', cursive;
+    font-size: 1.5rem;
+  }
+  
+  
+  
+  /* .rightpart h5{
+    position: absolute;
+    top: 7px;
+    left: 90px;
+    color: rgb(186, 243, 230);
+    font-family: 'Pacifico', cursive;
+   
+  } */
+
+
+.list-container{
+  list-style-type: none;
+  position: relative;
+  top: 110px;
+  left: 90px;
+  z-index: 10;
+}
+.ul-items{
+  font-size: 1.1rem;
+  color: rgb(186, 243, 230);
+ font-family: 'Pacifico', cursive;
+}
+
+  
+  @media (max-width:550px){
+
+
+
+    body{
+     
+      overflow-y: hidden;
+      overflow-x: hidden;
+     } 
+
+    .main-div-home{
+     /* border: 1px solid #ff0000; */
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      width: 100vw;
+  }
+   
+    .first-line{
+      color: white;
+      position: relative;
+      top: 68px;
+      left: 84px;
+      font-size: 0.75rem;
+      font-family: 'IBM Plex Serif', serif;
+    }
+    .second-line{
+      color: white;
+      position: relative;
+      top: 62px;
+    left: 93px;
+      font-size: 2.5rem;
+      
+    }
+    .third-line{
+      font-size: 0.7rem;
+      color: rgb(211, 149, 149);
+      position: relative;
+      top: 58px;
+    left: 46px;
+     
+    
+    }
+    .fourth-line{
+      font-size: 0.9rem;
+     
+      position: relative;
+      top: 58px;
+    left: 30px;
+      
+    }
+    .right-first{
+      position: relative;
+      top: 74px;
+      
+      right: 84px;
+     
+      font-size: 1.1rem;
+    }
+   
+    .list-container{
+      
+      position: relative;
+      top: 72px;
+      left: -80px;
+      
+    }
+    .ul-items{
+      font-size: 0.8rem;
+     
+    }
+  }

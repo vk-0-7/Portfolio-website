@@ -1,0 +1,112 @@
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+ }  
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+      
+  }
+  .Logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* border: 1px solid white; */
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .Logo img{
+    height: 100px;
+    width: 100px;
+  }
+  .Container {
+    height: 70px;
+    
+    background-color: rgb(10, 4, 4);
+  }
+
+  .Navbar-nav{
+    height: 100%;
+    /* margin-top: 10px; */
+    background-color: rgb(10, 4, 4);
+    list-style-type: none;
+    float: right;
+    display: flex;
+    flex-direction: right;
+   
+  }
+
+
+  
+  .Nav-item{
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Cardo', serif;
+  }
+  
+.Navbar-nav li a{
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+}
+
+.Navbar-nav li a:hover{
+  color: rgb(115, 116, 113);
+  /* font-weight: 600; */
+}
+
+
+.button{
+  text-decoration: none;
+  margin-right: 5px;
+ 
+}
+
+
+
+
+
+  
+  
+.btn-grad {background-image: linear-gradient(to right, #d0f390 0%, #E5E5BE  51%, #01376d  100%)}
+.btn-grad {
+   margin: 10px 15px;
+   padding: 0px 10px;
+   font-size: 1.2rem;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   font-family: 'Cardo', serif;          
+   box-shadow: 0 0 10px rgb(94, 85, 85);
+   border-radius: 10px;
+   display: block;
+   color: rgb(0, 0, 0);
+   font-weight: bold;
+}
+ .btn-grad a{
+  text-decoration: none;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   
+ }
+ .menuicon{
+   display: none;
+   width: 80px;
+   /* border: 1px solid red; */
+   position: absolute;
+   right: 10px;
+   
+ }
+
+   
+ 

@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+   }  
+
+
+.main-div-projects{
+    border-top: 1px white solid;
+    background: rgb(25,24,25);
+    background: linear-gradient(90deg, rgba(25,24,25,1) 6%, rgba(9,9,40,0.9252743333661589) 34%);
+    height: 89.2vh;
+    width: 100vw;
+}
+
+.project_text{
+  color: white;
+  font-size: 3.5rem;
+  font-family: 'Tapestry', cursive;
+  position: relative;
+  top: 2%;
+  left: 42%;
+  text-decoration: underline;
+  /* text-shadow:  0 0 3px black; */
+}
+
+.carousel-items{
+  height: 65vh;
+  width: 55vw;
+   position: absolute;
+   top: 26%;
+   left: 22%;
+   border: 2px solid red;
+   border-radius: 20px;
+   box-shadow: 0 0 15px rgb(179, 137, 137);
+   overflow: hidden;
+
+}
+img{
+    height: 64.5vh;
+    
+}
+
+@media (max-width:450px){
+   
+
+
+
+  .main-div-projects{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.project_text{
+  color: white;
+  font-size: 2.8rem;
+  font-family: 'Tapestry', cursive;
+  position: relative;
+  top: 12%;
+  left: 35%;
+  text-decoration: underline;
+  /* text-shadow:  0 0 3px black; */
+}
+  .carousel-items{
+    height: 50vh;
+    width: 65vw;
+     position: relative;
+     top: 16%;
+     left: 22%;
+    
+     
+  
+  }
+  img{
+    height: 50.5vh;
+    
+}
+
+  }
