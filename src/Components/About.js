@@ -68,6 +68,11 @@ const Home = () => {
   <motion.div className="ul-items" 
   variants={item} >
   <li><ArrowRightTwoToneIcon sx={{ color: yellow[500] ,fontSize: 35}} />
+     Wordpress</li>
+  </motion.div>
+  <motion.div className="ul-items" 
+  variants={item} >
+  <li><ArrowRightTwoToneIcon sx={{ color: yellow[500] ,fontSize: 35}} />
      HTML</li>
   </motion.div>
   <motion.div className="ul-items" variants={item} >
