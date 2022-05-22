@@ -30,7 +30,7 @@ const Contact = () => {
           
          <motion.div className="mail"    
             whileHover={{scale:[1,1.1,1,1.1,1,1.1],textshadow:"0px 0px 10px black"  }}
-         > <a   href = 'mailto:vivekr4400@gmail.com?subject="subject"&body=Hello' target='_blank' >
+         > <a   href = 'mailto:vivekr4400@gmail.com?subject="subject"&body=Hello' target='_blank' rel="noopener noreferrer" >
   <EmailIcon  sx={{ color: orange[900] ,fontSize: 90}} />
   <div className='id'> vivekr4400@gmail.com</div>
 </a>
@@ -51,10 +51,10 @@ const Contact = () => {
 
      <div className="social-media">
      
-     <a    href="https://www.instagram.com/vivek07____/" target="_blank" >
+     <a    href="https://www.instagram.com/vivek07____/" target="_blank" rel="noopener noreferrer" >
   <InstagramIcon  sx={{ color: red[300] ,fontSize: 55}} />
 </a> 
-     <a href='https://twitter.com/Vivek05024650' target="_blank" >
+     <a href='https://twitter.com/Vivek05024650' target="_blank" rel="noopener noreferrer">
   <TwitterIcon  sx={{ color: blue[300] ,fontSize: 55,mx:3}} />
 </a> 
      
