@@ -1,8 +1,7 @@
 import React from 'react'
 import'./About.css';
-import{Box,Typography} from '@mui/material';
-import { makeStyles } from '@mui/styles';
-import { pink, yellow } from '@mui/material/colors';
+
+import {  yellow } from '@mui/material/colors';
 import ArrowRightTwoToneIcon from '@mui/icons-material/ArrowRightTwoTone';
 import {motion} from 'framer-motion';
 

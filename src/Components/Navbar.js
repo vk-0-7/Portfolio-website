@@ -1,14 +1,14 @@
 import React,{useState,useEffect} from 'react'
 import './Nav.css';
 import './Nav-sm.css';
-import { Typography ,Container,Button,Box} from '@mui/material';
-import {NavLink,ExternalLink} from "react-router-dom";
+
+import {NavLink} from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
-import CancelIcon from '@mui/icons-material/Cancel';
+
 import logo from '../files/svg.gif';
 import{motion} from 'framer-motion'
 import IconButton from '@mui/material/IconButton';
-import { blue, grey, orange, yellow } from '@mui/material/colors';
+import {  yellow } from '@mui/material/colors';
 
 
 const Navbar = () => {
@@ -46,12 +46,12 @@ const Navbar = () => {
         <motion.li class="Nav-item"
          whileHover={{scale:1.2,textshadow:"0px 0px 8px"}}>
           <NavLink class="Nav-link" to="/">
-           About
+             About
           </NavLink>
         </motion.li>
         
          <motion.li class="Nav-item"  
-          whileHover={{scale:1.2,textshadow:"0px 0px 8px"}}
+          whileHover={{scale:1.2,textshadow:"0px 0px 7px"}}
         >
           
           <NavLink class="Nav-link" to="/projects">Projects</NavLink>
@@ -65,7 +65,7 @@ const Navbar = () => {
         <motion.button className='btn-grad' 
          whileTap={{scale:0.5}}
         
-        >  <a href="https://drive.google.com/file/d/1fT-UZObbp_dIp9kiWpR6GW0RHz5Pyd41/view?usp=sharing"   target="_blank"> Resume</a>   </motion.button>
+        >  <a href="https://drive.google.com/file/d/1fT-UZObbp_dIp9kiWpR6GW0RHz5Pyd41/view?usp=sharing"   target="_blank"> RESUME</a>   </motion.button>
      
         
       </ul> )}

@@ -1,13 +1,13 @@
 import React from 'react'
 import'./Contact.css';
-import {NavLink,Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import IconButton from '@mui/material/IconButton';
 import ArrowCircleRightTwoToneIcon from '@mui/icons-material/ArrowCircleRightTwoTone';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { blue, grey, pink,black, red, yellow, orange } from '@mui/material/colors';
+import { blue, grey,  red, orange } from '@mui/material/colors';
 import logo from '../files/svg.gif';
 import{motion} from 'framer-motion'
 

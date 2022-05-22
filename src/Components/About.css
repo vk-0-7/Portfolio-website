@@ -33,7 +33,7 @@ body{
     position: absolute;
     top: 190px;
     left: 193px;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     font-family: 'IBM Plex Serif', serif;
     background: -webkit-linear-gradient(rgb(252, 77, 42), rgb(240, 225, 225));
     text-shadow: -1px 2px rgba(128, 128, 128, 0.5);
@@ -41,14 +41,16 @@ body{
     -webkit-text-fill-color: transparent;
   }
   .third-line{
+    font-size: 0.9rem;
     color: rgb(211, 149, 149);
     position: absolute;
-    top: 271px;
+    top: 277px;
     left: 159px;
     font-family: 'Pacifico', cursive;
   
   }
   .fourth-line{
+    font-size: 1.2rem;
     color: rgb(147, 218, 182);
     position: absolute;
     top: 319px;
@@ -71,7 +73,7 @@ body{
     color: white;
     right: 160px;
     font-family: 'Tapestry', cursive;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
   
   
