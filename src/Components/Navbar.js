@@ -65,7 +65,7 @@ const Navbar = () => {
         <motion.button className='btn-grad' 
          whileTap={{scale:0.5}}
         
-        >  <a href="https://drive.google.com/file/d/1fT-UZObbp_dIp9kiWpR6GW0RHz5Pyd41/view?usp=sharing"   target="_blank" rel="noopener noreferrer"> RESUME</a>   </motion.button>
+        >  <a href="https://drive.google.com/file/d/1fT-UZObbp_dIp9kiWpR6GW0RHz5Pyd41/view?usp=sharing"   target="_blank"> RESUME</a>   </motion.button>
      
         
       </ul> )}

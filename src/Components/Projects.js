@@ -23,7 +23,7 @@ const Projects = () => {
       <div className="carousel-items">
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <a href="https://github.com/vk-0-7/my-first-repository" target="_blank" rel="noopener noreferrer"><img
+        <a href="https://github.com/vk-0-7/my-first-repository" target="_blank"  ><img
           className="d-block w-100"
           src={project1}
           alt="First slide"
