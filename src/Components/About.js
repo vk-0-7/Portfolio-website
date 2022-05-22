@@ -65,6 +65,7 @@ const Home = () => {
   </div>
   <motion.ul variants={container} initial="hidden" animate="show" className='list-container'>
 
+  
   <motion.div className="ul-items" 
   variants={item} >
   <li><ArrowRightTwoToneIcon sx={{ color: yellow[500] ,fontSize: 35}} />
