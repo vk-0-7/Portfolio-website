@@ -23,7 +23,7 @@ const Projects = () => {
       <div className="carousel-items">
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <a href="https://github.com/vk-0-7/my-first-repository" target="_blank"  ><img
+        <a href="https://github.com/vk-0-7/my-first-repository" target="_blank"  rel="noreferrer" ><img
           className="d-block w-100"
           src={project1}
           alt="First slide"
@@ -39,7 +39,6 @@ const Projects = () => {
           src="https://images.unsplash.com/photo-1651151798244-e2641c1af115?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80"
           alt="Second slide"
         />
-
         <Carousel.Caption>
           <h3>Project-2</h3>
           <p>Second Project will be Uploaded here soon....</p>
