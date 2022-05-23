@@ -30,7 +30,7 @@ const Projects = () => {
         /> </a>
         <Carousel.Caption>
           <h3>Project-1</h3>
-          <p>This Projects shows worldwide corona cases on real time APIs</p>
+          <p>This Projects shows world-wide corona cases on real time APIs</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
