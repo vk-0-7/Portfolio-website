@@ -3,6 +3,7 @@ import './Projects.css';
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import project1 from"../files/project1.png"
+import image3 from"../files/image3.png"
 
 const Projects = () => {
 
@@ -23,20 +24,20 @@ const Projects = () => {
       <div className="carousel-items">
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <a href="https://incorrect-jeopardy1.000webhostapp.com/" target="_blank"  rel="noreferrer" ><img
+        <a href="https://reviser-app07.netlify.app/" target="_blank"  rel="noreferrer" ><img
           className="d-block w-100"
-          src={project1}
+          src={image3}
           alt="First slide"
         /> </a>
         <Carousel.Caption>
           <h3>Project-1</h3>
-          <p></p>
+          <p>This Project helps you revise english grammer.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
       <a href="https://incorrect-jeopardy1.000webhostapp.com/" target="_blank"  rel="noreferrer" ><img
           className="d-block w-100"
-          src=""
+          src={project1}
           alt="Second slide"
         /> </a>
         <Carousel.Caption>
