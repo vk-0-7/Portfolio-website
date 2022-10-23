@@ -23,25 +23,25 @@ const Projects = () => {
       <div className="carousel-items">
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <a href="https://github.com/vk-0-7/my-first-repository" target="_blank"  rel="noreferrer" ><img
+        <a href="https://incorrect-jeopardy1.000webhostapp.com/" target="_blank"  rel="noreferrer" ><img
           className="d-block w-100"
           src={project1}
           alt="First slide"
         /> </a>
         <Carousel.Caption>
           <h3>Project-1</h3>
-          <p>This Projects shows world-wide corona cases on real time APIs</p>
+          <p></p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+      <a href="https://incorrect-jeopardy1.000webhostapp.com/" target="_blank"  rel="noreferrer" ><img
           className="d-block w-100"
-          src="https://images.unsplash.com/photo-1651151798244-e2641c1af115?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80"
+          src=""
           alt="Second slide"
-        />
+        /> </a>
         <Carousel.Caption>
           <h3>Project-2</h3>
-          <p>Second Project will be Uploaded here soon....</p>
+          <p>This Projects shows world-wide corona cases on real time APIs</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>

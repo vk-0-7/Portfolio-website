@@ -39,15 +39,7 @@ function App() {
      </Routes>
   </Router> 
      
-     {/* ( */}
-       {/* <Router>
-           <Navbar/>
-          <About/>
-          <Projects/>
-          <Contact/>
-     </Router> */}
-     {/* )
-     } */}
+    
      
   
 
