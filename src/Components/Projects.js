@@ -31,10 +31,10 @@ const Projects = () => {
         /> </a>
         <Carousel.Caption>
           <h3 style={{
-          color:"black", fontWeight:"bold"
+          color:"red", fontWeight:"bold"
           }}>Project-1</h3>
           <p style={{
-          color:"black",fontWeight:"500"
+          color:"red",fontWeight:"500"
           }}>This Project helps you revise english grammer.</p>
         </Carousel.Caption>
       </Carousel.Item>
