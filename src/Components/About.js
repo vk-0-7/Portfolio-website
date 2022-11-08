@@ -14,7 +14,7 @@ import {motion} from 'framer-motion';
 
 
 
-const Home = () => {
+const Home = () => { 
 
   const container = {
     hidden: { opacity: 0 },
