@@ -30,8 +30,12 @@ const Projects = () => {
           alt="First slide"
         /> </a>
         <Carousel.Caption>
-          <h3>Project-1</h3>
-          <p>This Project helps you revise english grammer.</p>
+          <h3 style={{
+          color:"black", fontWeight:"bold"
+          }}>Project-1</h3>
+          <p style={{
+          color:"black",fontWeight:"500"
+          }}>This Project helps you revise english grammer.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>

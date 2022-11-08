@@ -121,14 +121,14 @@
   .social-media{
     height: 10vh;
     width: 86vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
-    left: 10%;
+    left: 15%;
     top: 54%;
     
   }
   .social-media svg {
-    transform: scale(0.8);
+    transform: scale(0.7);
 }
  .mail svg {
     transform: scale(0.5);
