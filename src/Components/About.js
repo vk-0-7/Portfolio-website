@@ -56,7 +56,7 @@ const Home = () => {
        initial={{opacity:0}}
        animate={{opacity:1}}
        transition={{delay:0.8,duration:1}}
-     >I design and code beautifully simple things <br /> and i love what i do.</motion.p>
+     >Logical and organised individual with  a <br/> good communication skill and proficiency <br/> in web development (MERN) ,C++, DSA.</motion.p>
      </div>
 
 <div className="rightpart">

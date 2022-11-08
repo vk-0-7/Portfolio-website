@@ -46,7 +46,7 @@ body{
     position: absolute;
     top: 277px;
     left: 159px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
   }
   .fourth-line{
@@ -55,25 +55,25 @@ body{
     position: absolute;
     top: 319px;
     left: 159px;
-    font-family: 'My Soul', cursive;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .rightpart{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50vw;
     height: 80vh;
     position: absolute;
     left: 50%;
-    top: 100px;
+    top: 90px;
     
   }
 
   .right-first{
     margin-bottom: 10px;
-    position: absolute;
+    position: relative;
     top: 37px;
     color: white;
-    right: 160px;
+    left: 130px;
     font-family: 'Tapestry', cursive;
     font-size: 2.2rem;
   }
@@ -84,8 +84,8 @@ body{
 .list-container{
   list-style-type: none;
   position: relative;
-  top: 110px;
-  left: 90px;
+  top: 40px;
+  left: 100px;
   z-index: 10;
 }
 .ul-items{
@@ -125,7 +125,7 @@ body{
       color: white;
       position: relative;
       top: 62px;
-    left: 93px;
+      left: 93px;
       font-size: 2.5rem;
       
     }
@@ -134,22 +134,20 @@ body{
       color: rgb(211, 149, 149);
       position: relative;
       top: 58px;
-    left: 46px;
+      left: 46px;
      
     
     }
     .fourth-line{
-      font-size: 0.9rem;
-     
+      font-size: 0.8rem;
       position: relative;
       top: 58px;
-    left: 30px;
-      
-    }
+      left: 30px;
+       }
 
     
   .rightpart{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 90vw;
     height: 100%;
     position: relative;
@@ -159,10 +157,10 @@ body{
   }
 
     .right-first{
-      position: absolute;
+      position: relative;
       top: 14px;
       
-      right: 20%;
+      left: 35px;
      
       font-size: 1.1rem;
     }
@@ -170,12 +168,12 @@ body{
     .list-container{
       
       position: relative;
-      top: 72px;
-      left: 16%;
+      top: 32px;
+      left: 30px;
       
     }
     .ul-items{
-      font-size: 0.8rem;
+      font-size: 0.9rem;
      
     }
   }

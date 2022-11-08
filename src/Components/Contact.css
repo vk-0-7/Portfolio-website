@@ -78,7 +78,7 @@
  
   .contact p{
     
-    font-size: 3.9rem;
+    font-size: 2.8rem;
     
   }
 
@@ -95,17 +95,17 @@
     /* border: 1px solid red; */
     position: relative;
     top: -20px;
-    left: -87px;
+    left: -90px;
     
   
     
   }
   .id{
     width: 80vw;
-    font-size: 2.2rem;
+    font-size: 1.75rem;
     position: relative;
     top: -70px;
-    left: 74px;
+    left: 65px;
     border-radius: 14px;
     
   
@@ -120,14 +120,17 @@
 
   .social-media{
     height: 10vh;
-    width: 56vw;
-    /* border: 1px solid red; */
+    width: 86vw;
+    border: 1px solid red;
     position: relative;
-    left: 24%;
+    left: 10%;
     top: 54%;
     
   }
-  svg {
-    transform: scale(0.7);
+  .social-media svg {
+    transform: scale(0.8);
+}
+ .mail svg {
+    transform: scale(0.5);
 }
 }
