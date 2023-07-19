@@ -1,15 +1,14 @@
 import React from "react";
 import "./Contact.css";
 import { NavLink } from "react-router-dom";
-import IconButton from "@mui/material/IconButton";
-import ArrowCircleRightTwoToneIcon from "@mui/icons-material/ArrowCircleRightTwoTone";
+
 import {SiLeetcode,SiGeeksforgeeks} from 'react-icons/si'
 import {FaBitbucket,FaJira} from 'react-icons/fa'
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import EmailIcon from "@mui/icons-material/Email";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import { blue, grey, red, orange } from "@mui/material/colors";
+import { FaInstagram,FaTwitter } from "react-icons/fa";
+import {MdEmail} from "react-icons/md"
+import {AiOutlineGithub } from "react-icons/ai"
+
+
 import logo from "../files/svg.gif";
 import { motion } from "framer-motion";
 
@@ -24,7 +23,8 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <EmailIcon  />
+
+          <MdEmail  />
         </a>
         <a
           href='https://leetcode.com/vivekr4400/'
@@ -45,18 +45,18 @@ const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <InstagramIcon  />
+          <FaInstagram  />
         </a>
         <a
           href="https://twitter.com/Vivek05024650"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <TwitterIcon  />
+          <FaTwitter  />
         </a>
 
         <a href="https://github.com/vk-0-7">
-          <GitHubIcon  />
+          <AiOutlineGithub  />
         </a>
         <a href="https://bitbucket.org/vivek_07/workspace/overview">
           <FaBitbucket  />

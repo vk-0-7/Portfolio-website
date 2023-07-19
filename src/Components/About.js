@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.css";
 
-import { yellow } from "@mui/material/colors";
-import ArrowRightTwoToneIcon from "@mui/icons-material/ArrowRightTwoTone";
+
+
 import { motion } from "framer-motion";
 import { techStackData } from "../data/data";
 import { gsap } from "gsap";
