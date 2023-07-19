@@ -57,7 +57,7 @@ const Home = () => {
 
 </div>  */}
       </div>
-      <div className="tech_stack"  id="skills"
+      <div className="tech_stack"  id="skills" 
       
       >
         <motion.div className="tech_stack_inner"
