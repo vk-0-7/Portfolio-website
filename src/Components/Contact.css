@@ -7,18 +7,22 @@
 
 
 .main-body{
-  position: absolute;
-  top: 0px;
-  height: 100vh;
+ position: relative;
+  height: max-content;
   width: 100vw;
-  background-color: rgb(207, 207, 196);
-  color: black;
+  padding: 10vh 10vw;
+  background: radial-gradient(circle at 60% 40%, #19191c 25%, transparent 26%),
+    radial-gradient(circle at 40% 60%, #19191c80 25%, transparent 26%);
+  background-size: 1em 1em;
+  background-color: #151515;
+  opacity: 1;
+  color: var(--main-text);
+  display: grid;
+  place-items: center;
 }
 
 .contact {
-  position: relative;
-  top: 24%;
-  left: 30%;
+ 
   text-decoration: none;
   /* display: flex;
   flex-direction: column; */
@@ -26,111 +30,43 @@
 
  } 
 
-.contact p{
+.contact h2{
+  text-align: center;
   font-family: 'Tapestry', cursive;
-  font-size: 4.9rem;
+  font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1700 - 300)));
   text-shadow: 0 0 2px black;
 }
-.cancelicon{
-  position: absolute;
-  top: 10px;
-  right: 10px;
+
+.icons{
+   /* border: 1px solid red; */
+   display: flex;
+   gap: 10px;
+   justify-content: space-between;
+}
+.icons a{
+  border: 1.3px solid yellow;
+  padding: 8px;
+  border-radius: 50%;
+}
+.icons svg{
+  height: 30px;
+  width: 30px;
+  color: var(--main-text);
+  /* filter: drop-shadow(1px 1px 5px rgb(118, 118, 229)); */
+ 
 }
 
-.mail{
-  /* border: 1px solid red; */
-  position: relative;
-  top: -20px;
-  left: -60px;
-  
 
-  
-}
 
-.mail a{
-  text-decoration: none;
-}
 
-.id{
-  width: 50vw;
-  font-size: 3.6rem;
-  position: relative;
-  top: -86px;
-  left: 90px;
-  border: 3px solid red;
-  border-radius: 20px;
-   font-family: 'Tapestry', cursive;
-  box-shadow: 0 0 10px black;
-  text-shadow: 0 0 3px rgb(68, 67, 67);
-  color: rgb(80, 78, 78);
 
-}
-.social-media{
-  height: 10vh;
-  width: 28vw;
-  /* border: 1px solid red; */
-  position: relative;
-  left: 37%;
-  top: 43%;
-}
+
+
 
 @media (max-width:550px){
+ .icons svg{
+  height: 30px;
+  width: 30px;
+ }
  
-  .contact p{
-    
-    font-size: 2.8rem;
-    
-  }
-
-  .contact {
-    position: relative;
-    top: 32%;
-    left: 20%;
-   
-    
-   
-  
-   } 
-   .mail{
-    /* border: 1px solid red; */
-    position: relative;
-    top: -20px;
-    left: -90px;
-    
-  
-    
-  }
-  .id{
-    width: 80vw;
-    font-size: 1.75rem;
-    position: relative;
-    top: -70px;
-    left: 65px;
-    border-radius: 14px;
-    
-  
-  }
-  .main-body{
-    overflow-y: hidden;
-    overflow-x: hidden;
-    height: 100vh;
-    width: 100vw;
-    
-  }
-
-  .social-media{
-    height: 10vh;
-    width: 86vw;
-    /* border: 1px solid red; */
-    position: relative;
-    left: 15%;
-    top: 54%;
-    
-  }
-  .social-media svg {
-    transform: scale(0.7);
-}
- .mail svg {
-    transform: scale(0.5);
-}
 }

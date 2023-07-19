@@ -1,109 +1,182 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.Logo {
+  position: absolute;
+  top: 10px;
+  left: 8vw;
+  /* border: 1px solid white; */
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.Logo img {
+  height: 100px;
+  width: 100px;
+}
+.Container {
+  padding-inline: 8vw;
+  height: 80px;
+ 
+}
+
+.Navbar-nav {
+  height: 100%;
+  /* margin-top: 10px; */
+
+  list-style-type: none;
+  float: right;
+  display: flex;
+  flex-direction: right;
+  align-items: center;
+}
+
+.Nav-item {
+  font-size: 20px;
+  padding: 10px 10px;
+  margin: 10px 5px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.Navbar-nav a {
+  text-decoration: none;
+  color: var(--main-text);
+  cursor: pointer;
+  padding-bottom: 3px;
+  /* border: 1px solid red; */
+  padding-inline: 10px;
+}
+.Nav-item:hover a{
+  border-bottom: 2px solid yellow;
+  
+  transition:  0.2s ease;
+}
+
+/* button{
+  text-decoration: none;
+  margin-right: 20px;
+  width: 200px;
+  */
 
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    
-      
-  }
-  .Logo{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    /* border: 1px solid white; */
-    border-radius: 50px;
-    overflow: hidden;
-  }
-  .Logo img{
-    height: 100px;
-    width: 100px;
+
+
+
+
+
+
+
+.menuicon {
+  display: none;
+  width: 80px;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 20px;
+  right: 6px;
+}
+
+.menu_line_one,
+.menu_line_two,
+.menu_line_three {
+  height: 2.5px;
+  width: 17.5px;
+  background: white;
+  border-radius: 10px;
+  /* transition-delay: 0.5s; */
+  transition-duration: 0.5s;
+  transform-origin: center left;
+}
+
+.open_menu_icon .menu_line_one {
+  transform: rotateZ(45deg);
+}
+.open_menu_icon .menu_line_two {
+  transform: rotateY(-90deg);
+}
+.open_menu_icon .menu_line_three {
+  transform: rotateZ(-45deg);
+}
+#menu_icon_container {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  /* padding: 10px; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 3.5px;
+  cursor: pointer;
+  z-index: 1001;
+  /* border: 1px solid red; */
+}
+.open_menu_icon {
+  transition: 0.5s;
+}
+.open_menu {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--main-green-dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+  .Logo img {
+    height: 70px;
+    width: 70px;
   }
   .Container {
-    height: 70px;
-    
-    background-color: rgb(10, 4, 4);
+    transition: all 0.5s ease;
   }
 
-  .Navbar-nav{
-    height: 100%;
-    /* margin-top: 10px; */
-    background-color: rgb(10, 4, 4);
-    list-style-type: none;
-    float: right;
-    display: flex;
-    flex-direction: right;
-   
+  #open {
+    /* border: 1px solid white; */
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding-right: 0px;
+
+    display: grid;
+    place-items: center;
   }
 
-
-  
-  .Nav-item{
-    font-size: 1.3rem;
-    padding: 10px 10px;
-    margin: 10px 10px;
-    text-align: center;
-    font-weight: 400;
-    font-family: 'Cardo', serif;
+  .Navbar-nav {
+    /* border: 1px solid red; */
+    height: max-content;
+    width: 100%;
+    margin: 0px;
+    flex-direction: column;
   }
-  
-.Navbar-nav li a{
-  text-decoration: none;
-  color: rgb(255, 254, 254);
+
+  .btn-grad {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    height: 35px;
+    width: 90px;
+    position: relative;
+    left: 28vw;
+  }
+
+  .menuicon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+  }
 }
-
-.Navbar-nav li a:hover{
-  color: rgb(115, 116, 113);
-  /* font-weight: 600; */
-}
-
-
-.button{
-  text-decoration: none;
-  margin-right: 5px;
- 
-}
-
-
-
-
-
-  
-  
-.btn-grad {background-image: linear-gradient(to right, #d0f390 0%, #E5E5BE  51%, #01376d  100%)}
-.btn-grad {
-   margin: 10px 15px;
-   padding: 0px 10px;
-   font-size: 1.2rem;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   font-family: 'Cardo', serif;          
-   box-shadow: 0 0 10px rgb(94, 85, 85);
-   border-radius: 10px;
-   display: block;
-   color: rgb(0, 0, 0);
-   font-weight: bold;
-}
- .btn-grad a{
-  text-decoration: none;
- }
-
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   
- }
- .menuicon{
-   display: none;
-   width: 80px;
-   /* border: 1px solid red; */
-   position: absolute;
-   top: 20px;
-   right: 6px;
-   
- }
-
-   
- 

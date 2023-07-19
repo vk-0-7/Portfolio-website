@@ -1,77 +1,75 @@
-import React from 'react'
-import'./Contact.css';
-import {NavLink} from "react-router-dom";
-import IconButton from '@mui/material/IconButton';
-import ArrowCircleRightTwoToneIcon from '@mui/icons-material/ArrowCircleRightTwoTone';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import EmailIcon from '@mui/icons-material/Email';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import { blue, grey,  red, orange } from '@mui/material/colors';
-import logo from '../files/svg.gif';
-import{motion} from 'framer-motion'
-
-
-
-
-
+import React from "react";
+import "./Contact.css";
+import { NavLink } from "react-router-dom";
+import IconButton from "@mui/material/IconButton";
+import ArrowCircleRightTwoToneIcon from "@mui/icons-material/ArrowCircleRightTwoTone";
+import {SiLeetcode,SiGeeksforgeeks} from 'react-icons/si'
+import {FaBitbucket,FaJira} from 'react-icons/fa'
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { blue, grey, red, orange } from "@mui/material/colors";
+import logo from "../files/svg.gif";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className='main-body'>
+    <div className="main-body" id="Contact">
+      <div className="contact">
+        {/* <h2> Get in Touch</h2> */}
+         <div className="icons">
+        <a
+          href='mailto:vivekr4400@gmail.com?subject="subject"&body=Hello'
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <EmailIcon  />
+        </a>
+        <a
+          href='https://leetcode.com/vivekr4400/'
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiLeetcode  />
+        </a>
+        <a
+          href='https://auth.geeksforgeeks.org/user/vivekr4400'
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         <SiGeeksforgeeks/>
+        </a>
+        <a
+          href="https://www.instagram.com/vivek07____/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon  />
+        </a>
+        <a
+          href="https://twitter.com/Vivek05024650"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TwitterIcon  />
+        </a>
 
-<div className="Logo">
-          <img src={logo} alt="" />
-     </div>
-
-         <div className="contact">
-           <p> Contact Me</p>
-         
-          
-         <motion.div className="mail"    
-            whileHover={{scale:[1,1.1,1,1.1,1,1.1],textshadow:"0px 0px 10px black"  }}
-         > <a   href = 'mailto:vivekr4400@gmail.com?subject="subject"&body=Hello' target='_blank' rel="noopener noreferrer" >
-  <EmailIcon  sx={{ color: orange[900] ,fontSize: 90}} />
-  <div className='id'> vivekr4400@gmail.com</div>
-</a>
-
-</motion.div> 
-
-           
-           
-           </div>
-        
-
-      <div className="cancelicon">
-      
-      <IconButton color="success"  fontSize="large" aria-label="cancel-icon" as={NavLink} to="/">
-  <ArrowCircleRightTwoToneIcon  sx={{ color: grey[900] ,fontSize: 45}} />
-</IconButton>
+        <a href="https://github.com/vk-0-7">
+          <GitHubIcon  />
+        </a>
+        <a href="https://bitbucket.org/vivek_07/workspace/overview">
+          <FaBitbucket  />
+        </a>
+        <a href="https://cfuturetechtech.atlassian.net/jira/people/63aae7fa2c70aae1e6f9af9d">
+          <FaJira  />
+        </a>
+        </div>
       </div>
 
-     <div className="social-media">
-     
-     <a    href="https://www.instagram.com/vivek07____/" target="_blank" rel="noopener noreferrer" >
-  <InstagramIcon  sx={{ color: red[300] ,fontSize: 55}} />
-</a> 
-     <a href='https://twitter.com/Vivek05024650' target="_blank" rel="noopener noreferrer">
-  <TwitterIcon  sx={{ color: blue[300] ,fontSize: 55,mx:3}} />
-</a> 
-     
       
-     <a  
-    
-     href = 'https://github.com/vk-0-7' >
-  <GitHubIcon  sx={{ color: grey[800] ,fontSize: 55}}  />
-</a>
+    </div>
+  );
+};
 
-     </div>
-
-
-
-
-      </div>
-  )
-}
-
-export default Contact
+export default Contact;

@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
+import { BrowserRouter,Routes, Route } from "react-router-dom";
 
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
@@ -14,17 +14,18 @@ function App() {
 
   return (
     <>
-    {/* <Navbar/>  */}
-    {/* <Home/>
+    <BrowserRouter>
+    <Navbar/> 
+   
   <About/>
-  <Projects/> */}
-     
-      
+  <Projects/> 
+  <Contact/>
+  </BrowserRouter> 
 
   
   {/* {screenwidth>550 ?
      (*/}
-       <Router>
+       {/* <Router>
      
      <Navbar/>
         <Routes>
@@ -38,7 +39,7 @@ function App() {
     
      </Routes>
   </Router> 
-     
+      */}
     
      
   
