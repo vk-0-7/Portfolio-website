@@ -7,7 +7,7 @@
 
 
 .main-body{
- position: relative;
+ position: absolute;
   height: max-content;
   width: 100vw;
   padding: 10vh 10vw;
@@ -44,7 +44,7 @@
    justify-content: space-between;
 }
 .icons a{
-  border: 1.3px solid yellow;
+  border: 1.5px solid yellow;
   padding: 8px;
   border-radius: 50%;
 }

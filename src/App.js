@@ -1,31 +1,29 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
-import { BrowserRouter,Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Projects from './Components/Projects';
-import Contact from './Components/Contact';
-import About from './Components/About';
-import Navbar from './Components/Navbar';
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import About from "./Components/About";
+import Navbar from "./Components/Navbar";
 
 function App() {
-
   // const[screenwidth,setscreenwidth]=useState(window.innerWidth)
 
   return (
     <>
-    <BrowserRouter>
-    <Navbar/> 
-   
-  <About/>
-  <Projects/> 
-  <Contact/>
-  </BrowserRouter> 
+      <BrowserRouter>
+        <Navbar />
 
-  
-  {/* {screenwidth>550 ?
+        <About />
+        <Projects />
+        <Contact />
+      </BrowserRouter>
+
+      {/* {screenwidth>550 ?
      (*/}
-       {/* <Router>
+      {/* <Router>
      
      <Navbar/>
         <Routes>
@@ -40,11 +38,6 @@ function App() {
      </Routes>
   </Router> 
       */}
-    
-     
-  
-
-  
     </>
   );
 }

@@ -6,13 +6,9 @@
 }
 
 .main-div-projects {
-  background: radial-gradient(circle at 60% 40%, #19191c 25%, transparent 26%),
-    radial-gradient(circle at 40% 60%, #19191c80 25%, transparent 26%);
-  background-size: 1em 1em;
-  background-color: #151515;
-  opacity: 1;
+ 
   height: fit-content;
-  width: 100vw;
+  
   position: relative;
   padding: 8vh 12vw;
 }
@@ -21,35 +17,126 @@
    text-align: center;
    color: var(--main-text);
    margin-bottom: 5vh;
-   font-family: var(--main-font);
+   font-family: var(--sec-font);
    font-size: 45px;
 }
 
-.carousel-items {
+.projects {
   height: max-content;
-  /* width: 100vw; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 40px;
+  
   
   
 }
-.carousel-items >div{
-  aspect-ratio: 3.2/2;
-  /* box-shadow: 1.5px 1.5px 8px white; */
-  border-radius: 10px;
+.project{
+    display: flex;
+    margin-block: 5vh;
+    /* border: 1px solid red; */
+  
 }
 
 
+.project_img{
+   height: 45vh;
+   width: 50%;
+   margin-block: 5vh;
+   z-index: 11;
+  position: relative;
+   left: 1vw;
+}
 
-
-.carousel-items img {
+.projects img {
   height: 100%;
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
+  
   /* border-radius: 10px; */
 }
+
+
+.project_details{
+   border: 1px solid yellow;
+   border-radius: 10px;
+   z-index: 10;
+   width: 50%;
+   height: 55vh;
+   position: relative;
+   right: 1vw;
+   padding: 2vh 2vw;
+   padding-left: 4vw;
+   /* background-color: grey; */
+}
+.even{
+  display: flex;
+  flex-direction: row-reverse;
+  /* border: 1px solid red; */
+}
+.even .project_img{
+  position: relative;
+  left: -1vw !important;
+}
+
+.even .project_details{
+  right: -1vw !important;
+  padding-right: 3vw;
+  padding-left: 2vw;
+}
+
+.project_details >span{
+   display: flex;
+   justify-content: space-between;
+   color: var(--main-text);
+   height: 15%;
+}
+
+.project_details h3{
+  font-size: 28px;
+}
+.project_details a{
+  color: var(--main-text);
+}
+.aboutProject{
+  /* border: 1px solid red; */
+  height: 85%;
+  display: grid;
+  place-items: center;
+}
+.aboutProject p{
+  padding-top: 1vh;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: justify;
+   color: var(--main-text);
+}
+.project_icons{
+   display: flex;
+   gap: 20px;
+}
+.project_icons svg{
+  height: 25px;
+  width: 25px;
+  
+}
+
+.overlay{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 450px) {
   .main-div-projects {

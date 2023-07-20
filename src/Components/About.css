@@ -63,6 +63,7 @@ body {
 .fourth-line span{
   color: yellow;
   font-weight: 300;
+  /* font-style: italic; */
 }
 .fourth-line a{
   text-decoration: none;
