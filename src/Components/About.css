@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100vw;
-  
+
   font-family: var(--main-font) !important;
   height: fit-content;
   padding: 5vh 10vw;
@@ -31,41 +31,40 @@ body {
   padding: 8vh 0vw;
   display: grid;
   align-items: center;
-  
 }
 
 .first-line {
   color: var(--main-text);
 
-  font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1700 - 300)));
+  font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1700 - 300)));
 }
 .second-line {
   color: var(--main-text);
   font-family: var(--sec-font);
-  font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1700 - 300)));
-   padding: 0;
-   margin: 0;
-   /* border: 1px solid red; */
-  
+  font-size: calc(45px + (80 - 45) * ((100vw - 300px) / (1700 - 300)));
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+
   text-shadow: -1px 2px rgba(128, 128, 128, 0.5);
-  
 }
 .third-line h2 {
-  font-size: calc(12px + (80 - 12) * ((100vw - 300px) / (1700 - 300)));
+  font-size: calc(22px + (70 - 22) * ((100vw - 300px) / (1700 - 300)));
+ line-height: calc(35px + (85 - 35) * ((100vw - 300px) / (1700 - 300)));
   color: var(--main-text);
 }
 .fourth-line {
-  font-size: calc(13px + (23 - 13) * ((100vw - 300px) / (1700 - 300)));
+  font-size: calc(12px + (23 - 12) * ((100vw - 300px) / (1700 - 300)));
+  line-height: calc(23px + (38 - 23) * ((100vw - 300px) / (1700 - 300)));
   color: var(--main-text);
   font-family: var(--sec-font);
- 
 }
-.fourth-line span{
+.fourth-line span {
   color: yellow;
   font-weight: 300;
   /* font-style: italic; */
 }
-.fourth-line a{
+.fourth-line a {
   text-decoration: none;
 }
 
@@ -80,8 +79,7 @@ body {
   display: inline-block;
 
   font-size: 16px;
-  font-weight: 600;
-  line-height: normal;
+
   margin: 0;
   min-height: 50px;
   min-width: 0;
@@ -98,93 +96,86 @@ body {
   will-change: transform;
 }
 
-.button-27:active {
-  box-shadow: none;
-  transform: translateY(0);
-}
 .button-27:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
 
+.tech_stack {
+  height: fit-content;
+  width: 100vw;
+  padding: 5vh 12vw;
 
-
-.tech_stack{
-   height: fit-content;
-   width: 100vw;
-   padding: 5vh 12vw;
-   background: radial-gradient(circle at 60% 40%, #19191c 25%, transparent 26%),
-   radial-gradient(circle at 40% 60%, #19191c80 25%, transparent 26%);
- background-size: 1em 1em;
- background-color: #151515;
- opacity: 1;
- font-family: var(--main-font) !important;
- color: var(--main-text);
+  font-family: var(--main-font) !important;
+  color: var(--main-text);
 }
-.tech_stack_inner h1{
-    text-align: center;
-    font-size: 45px;
-    margin-bottom: 4vh;
+.tech_stack_inner h1 {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 4vh;
 }
-.item_container{
+.item_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 30px;
   /* row-gap: 30px; */
 }
 
-.items{
+.items {
   /* border: 1px solid red; */
   /* aspect-ratio: 210/150; */
   border-radius: 10px;
   padding: 25px;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
   background-blend-mode: multiply;
- 
 }
 
-
-
-.items >img{
+.items > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   /* mix-blend-mode:difference; */
 }
 
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 550px) {
   body {
     overflow-x: hidden;
   }
-
   .main-div-home {
-    flex-direction: column;
-    /* border: 1px solid #ff0000; */
-    height: max-content;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
     width: 100vw;
+  
+    font-family: var(--main-font) !important;
+    height: fit-content;
+    padding: 5vh 8vw;
+    /* border: 1px solid red; */
   }
   .left-part {
-    padding: 30px 50px;
-
-    width: 100vw;
-    height: max-content;
+    height: 60vh;
+    width: 100%;
+    /* border: 1px solid green; */
+    padding: 8vh 0vw;
+    display: grid;
+    align-items: center;
   }
-
-  .rightpart {
+  .tech_stack {
+    height: fit-content;
     width: 100vw;
-    height: 100%;
-    padding: 30px 50px;
+    padding: 5vh 8vw;
+  
+    font-family: var(--main-font) !important;
+    color: var(--main-text);
   }
+ 
 }

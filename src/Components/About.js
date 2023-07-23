@@ -13,7 +13,7 @@ import LocomotiveScroll from "locomotive-scroll";
 const Home = () => {
   return (
     <div className="smooth-wrapper" >
-      <div className="main-div-home" >
+      <div className="main-div-home" id="about" >
        <motion.div className="left-part"
              initial={{ opacity: 0, translateY: 100 }}
              animate={{ opacity: 1, translateY: 0 }}

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
+import { AiTwotonePhone } from "react-icons/ai";
+import {HiOutlineMail} from "react-icons/hi"
 // import "./Nav-sm.css";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 import { NavLink } from "react-router-dom";
 import logo from "../files/svg.gif";
@@ -9,23 +11,10 @@ import logo from "../files/svg.gif";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  //   useEffect(() => {
-  //  const navItems = document.querySelectorAll('.Nav-link');
-
-  // // Add click event listener to each navbar item
-  //    navItems.forEach(item => {
-  //   item.addEventListener('click', () => {
-  //     // Remove 'active' class from all navbar items
-  //     navItems.forEach(navItem => navItem.classList.remove('active'));
-
-  //     // Add 'active' class to the clicked navbar item
-  //     item.classList.add('active');
-  //   });
-  // });
-  //   }, []);
   return (
     <>
-      <nav className="Container" id={open ? "open" : ""} >
+      <nav className={"Container"}>
+        <div className="open_logo">
         <div className="Logo">
           <NavLink to={"/"}>
             {" "}
@@ -33,15 +22,18 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        <motion.div className="Navbar-nav"
-            initial={{  translateY: -50 }}
-            animate={{  translateY: 0 }}
-            transition={{ duration: 0.4 }}
-        
-        
+       
+
+        </div>
+        <div className={` ${open ? "open_menu":"lg_menu"} `}>
+        <motion.div
+          className="Navbar-nav"
+          initial={{ translateY: -50 }}
+          animate={{ translateY: 0 }}
+          transition={{ duration: 0.4 }}
         >
           <div className="Nav-item">
-            <a class="Nav-link" to="/">
+            <a class="Nav-link" href="#about">
               About
             </a>
           </div>
@@ -66,7 +58,16 @@ const Navbar = () => {
           </div>
         </motion.div>
 
-        <div className="menuicon">
+        {
+          open && 
+          <div className="contact_nav">
+            <span> <AiTwotonePhone/> +91-9608945441 <br /></span>
+            <span> <HiOutlineMail/> vivekr4400@gmail.com </span>
+          </div>
+        }
+
+        </div>
+<div className="menuicon">
           <div
             id="menu_icon_container"
             className={open ? "open_menu_icon" : ""}
@@ -82,6 +83,8 @@ const Navbar = () => {
             <div className="menu_line_three"></div>
           </div>
         </div>
+       
+       
       </nav>
     </>
   );

@@ -11,11 +11,7 @@
   height: max-content;
   width: 100vw;
   padding: 10vh 10vw;
-  background: radial-gradient(circle at 60% 40%, #19191c 25%, transparent 26%),
-    radial-gradient(circle at 40% 60%, #19191c80 25%, transparent 26%);
-  background-size: 1em 1em;
-  background-color: #151515;
-  opacity: 1;
+  
   color: var(--main-text);
   display: grid;
   place-items: center;
@@ -29,13 +25,13 @@
  
 
  } 
-
+/* 
 .contact h2{
   text-align: center;
   font-family: 'Tapestry', cursive;
   font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1700 - 300)));
   text-shadow: 0 0 2px black;
-}
+} */
 
 .icons{
    /* border: 1px solid red; */
@@ -47,6 +43,8 @@
   border: 1.5px solid yellow;
   padding: 8px;
   border-radius: 50%;
+  display: grid;
+  place-items: center;
 }
 .icons svg{
   height: 30px;
@@ -64,9 +62,23 @@
 
 
 @media (max-width:550px){
+
+  .main-body{
+    
+     padding: 8vh 0vw;
+     
+    
+   }
  .icons svg{
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: auto;
+  /* border: 1px solid white; */
  }
+
+.icons a{
+ border: 1.3px solid yellow;
+ padding: 4px;
+ border-radius: 50%;
+}
  
 }
