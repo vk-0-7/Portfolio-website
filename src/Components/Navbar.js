@@ -21,7 +21,22 @@ const Navbar = () => {
             <img src={logo} alt="" />{" "}
           </NavLink>
         </div>
-
+        <div className="menuicon">
+          <div
+            id="menu_icon_container"
+            className={open ? "open_menu_icon" : ""}
+            onClick={() => {
+              setOpen((old) => !old);
+            }}
+          >
+            {/* line 1 */}
+            <div className="menu_line_one"></div>
+            {/* line 2 */}
+            <div className="menu_line_two"></div>
+            {/* line 3 */}
+            <div className="menu_line_three"></div>
+          </div>
+        </div>
        
 
         </div>
@@ -67,22 +82,7 @@ const Navbar = () => {
         }
 
         </div>
-<div className="menuicon">
-          <div
-            id="menu_icon_container"
-            className={open ? "open_menu_icon" : ""}
-            onClick={() => {
-              setOpen((old) => !old);
-            }}
-          >
-            {/* line 1 */}
-            <div className="menu_line_one"></div>
-            {/* line 2 */}
-            <div className="menu_line_two"></div>
-            {/* line 3 */}
-            <div className="menu_line_three"></div>
-          </div>
-        </div>
+
        
        
       </nav>
