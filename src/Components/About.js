@@ -14,10 +14,10 @@ const Home = () => {
   return (
     <div className="smooth-wrapper" >
       <div className="main-div-home" id="about" >
-       <motion.div className="left-part"
-             initial={{ opacity: 0, translateY: 100 }}
-             animate={{ opacity: 1, translateY: 0 }}
-             transition={{ duration: 0.5,delay:0.2 }}
+        <motion.div className="left-part"
+          initial={{ opacity: 0, translateY: 100 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="inner_left_part">
             <div className="first-line">Hi , 👋 I'M</div>
@@ -29,14 +29,14 @@ const Home = () => {
               <p>
                 Logical and organised individual with a good
                 <span> communication skill </span> and proficiency in{" "}
-                <span> web development (MERN) ,C++, DSA . </span> 
-                  Currently i am working as a frontend Developer Intern at
-                  <a href="https://cftlabs.org/"> <span><u> CFT Labs </u> </span> </a> 
+                <span> web development (MERN) ,C++, DSA . </span>
+                Currently i am working as a frontend Developer Intern at
+                <a href="https://cftlabs.org/"> <span><u> CFT Labs </u> </span> </a>
               </p>
             </div>
 
             <a
-              href="https://drive.google.com/file/d/19vGxHboHYLowph1fzfo7fut4f9GMxTAf/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ERa-axfiRJwbmawH0Ejn8sClO28PiYgt/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
@@ -46,8 +46,8 @@ const Home = () => {
               </button>
             </a>
           </div>
-           
-          
+
+
         </motion.div>
         {/* <div className="rightpart">
    <img src="/Images/homeimg.png" alt="no image found" />
@@ -57,14 +57,14 @@ const Home = () => {
 
 </div>  */}
       </div>
-      <div className="tech_stack"  id="skills" 
-      
+      <div className="tech_stack" id="skills"
+
       >
         <motion.div className="tech_stack_inner"
-         initial={{ opacity: 0 }}
-         whileInView={{ opacity: 1 }}
-         transition={{delay:0.1,duration:0.4}}
-         viewport={{ once: true }}>
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.4 }}
+          viewport={{ once: true }}>
           <h1>Skills I'm quite good at.. </h1>
           <div className="item_container">
             {techStackData.map((item, index) => {
